@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="5dp"
+    android:background="#FFD2B730"
+    app:cardElevation="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/note">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:weightSum="1"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="gone"
+            android:id="@+id/textView"
+            android:layout_weight=".95" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:hint="Enter title here"
+            android:visibility="gone"
+            android:id="@+id/edittoolbar"
+
+            android:layout_weight=".95" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:visibility="gone"
+            android:layout_weight="0.02"
+            android:background="@drawable/lead_pencil" />
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonedit"
+            android:visibility="gone"
+            android:layout_weight="0.02"
+            android:background="@drawable/content_save" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:layout_weight="0.02"
+            android:background="@drawable/delete" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:text="New Text"
+        android:id="@+id/textView2"
+        android:visibility="gone"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#D2E3AE"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:hint="Type note"
+        android:id="@+id/editText"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:background="#E7D9E7"
+        android:gravity="top|left"
+        android:visibility="gone"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
+</android.support.v7.widget.CardView>
